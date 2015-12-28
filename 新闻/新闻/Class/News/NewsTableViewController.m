@@ -7,21 +7,40 @@
 //
 
 #import "NewsTableViewController.h"
+#import "News.h"
+#import "NewsCell.h"
+
 
 @interface NewsTableViewController ()
+
+@property (nonatomic ,strong) NSArray *newsList;
 
 @end
 
 @implementation NewsTableViewController
 
+
+- (void)setNewsList:(NSArray *)newsList{
+
+    _newsList = newsList;
+    
+    [self.tableView reloadData];
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    __weak typeof(self) weakSelf = self;
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [News loadNewsListWithURLString:@"T1348647853363/0-20.html" finished:^(NSArray *newsList) {
+        
+        NSLog(@"%@",newsList);
+        
+        weakSelf.newsList = newsList;
+        
+    }];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -31,25 +50,22 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+
+    return self.newsList.count;
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-    // Configure the cell...
+    
+    NewsCell *cell = [tableView dequeueReusableCellWithIdentifier:@"NewsCell" forIndexPath:indexPath];
+    
+    cell.news = self.newsList[indexPath.row];
     
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.

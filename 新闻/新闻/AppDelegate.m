@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import <AFNetworkActivityIndicatorManager.h>
+#import "News.h"
+#import "NewsTableViewController.h"
 
 @interface AppDelegate ()
 
@@ -18,6 +20,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+//    NewsTableViewController *NewControl = [[NewsTableViewController alloc] init];
+//    
+//    self.window.rootViewController = NewControl;
+    
+    
+    
+    
     
     
     //1设置缓存

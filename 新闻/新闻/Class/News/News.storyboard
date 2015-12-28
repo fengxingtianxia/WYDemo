@@ -1,7 +1,81 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="z60-wk-dys">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--News Table View Controller-->
+        <scene sceneID="x2z-od-UV8">
+            <objects>
+                <tableViewController storyboardIdentifier="NewTableView" id="z60-wk-dys" customClass="NewsTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="k6U-Fc-z3F">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="NewsCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsCell" rowHeight="80" id="b6h-9e-9ud" customClass="NewsCell">
+                                <rect key="frame" x="0.0" y="28" width="600" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="b6h-9e-9ud" id="GcC-ed-MYA">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="79.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Uhv-52-lGi" userLabel="配图">
+                                            <rect key="frame" x="8" y="10" width="80" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="4Ln-rI-hde"/>
+                                                <constraint firstAttribute="width" constant="80" id="AvG-EC-qp2"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eBw-9n-2dn" userLabel="摘要">
+                                            <rect key="frame" x="98" y="54" width="33" height="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hvi-Gu-xhu" userLabel="标题">
+                                            <rect key="frame" x="96" y="10" width="37.5" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H3u-UJ-SiP" userLabel="跟帖">
+                                            <rect key="frame" x="552" y="54" width="33" height="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="eBw-9n-2dn" firstAttribute="leading" secondItem="Uhv-52-lGi" secondAttribute="trailing" constant="10" id="02X-eR-yYx"/>
+                                        <constraint firstItem="Uhv-52-lGi" firstAttribute="leading" secondItem="GcC-ed-MYA" secondAttribute="leadingMargin" id="5fr-Og-z1D"/>
+                                        <constraint firstItem="Uhv-52-lGi" firstAttribute="bottom" secondItem="eBw-9n-2dn" secondAttribute="bottom" id="CE4-Yl-ZtU"/>
+                                        <constraint firstAttribute="bottom" secondItem="H3u-UJ-SiP" secondAttribute="bottom" constant="9.5" id="Fzj-Ug-h7s"/>
+                                        <constraint firstItem="Uhv-52-lGi" firstAttribute="centerY" secondItem="GcC-ed-MYA" secondAttribute="centerY" id="MUk-Uk-hou"/>
+                                        <constraint firstItem="Hvi-Gu-xhu" firstAttribute="top" secondItem="Uhv-52-lGi" secondAttribute="top" id="Ntr-OV-fCg"/>
+                                        <constraint firstItem="Hvi-Gu-xhu" firstAttribute="leading" secondItem="Uhv-52-lGi" secondAttribute="trailing" constant="8" id="bVp-mD-uI3"/>
+                                        <constraint firstAttribute="trailing" secondItem="H3u-UJ-SiP" secondAttribute="trailing" constant="15" id="x94-Jn-x1E"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="digest" destination="eBw-9n-2dn" id="nLP-eR-Ttm"/>
+                                    <outlet property="iconView" destination="Uhv-52-lGi" id="HFA-xQ-Scp"/>
+                                    <outlet property="replayLabel" destination="H3u-UJ-SiP" id="dgW-Ff-xs5"/>
+                                    <outlet property="title" destination="Hvi-Gu-xhu" id="2Ax-IG-D3k"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="z60-wk-dys" id="T1k-GN-lZO"/>
+                            <outlet property="delegate" destination="z60-wk-dys" id="fbT-4N-nVD"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dCC-fj-dOX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1056" y="-695"/>
+        </scene>
+    </scenes>
 </document>

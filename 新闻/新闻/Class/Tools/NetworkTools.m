@@ -23,6 +23,8 @@
         
         instace = [[self alloc] initWithBaseURL:url];
         
+        instace.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",@"text/json",@"text/jacascript",@"text/html", nil];
+        
     });
     
     

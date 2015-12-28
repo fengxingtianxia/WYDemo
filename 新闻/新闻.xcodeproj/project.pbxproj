@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		0446CC9E1C2C405200F6A276 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0446CC9D1C2C405200F6A276 /* main.m */; };
 		0446CCA11C2C405200F6A276 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0446CCA01C2C405200F6A276 /* AppDelegate.m */; };
-		0446CCA41C2C405200F6A276 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0446CCA31C2C405200F6A276 /* ViewController.m */; };
-		0446CCA71C2C405200F6A276 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0446CCA51C2C405200F6A276 /* Main.storyboard */; };
 		0446CCA91C2C405200F6A276 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0446CCA81C2C405200F6A276 /* Assets.xcassets */; };
 		0446CCAC1C2C405200F6A276 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0446CCAA1C2C405200F6A276 /* LaunchScreen.storyboard */; };
 		0446CCB71C2C41A400F6A276 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0446CCB61C2C41A400F6A276 /* News.storyboard */; };
 		0446CCBA1C2C41C800F6A276 /* NewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0446CCB91C2C41C800F6A276 /* NewsTableViewController.m */; };
 		0446CCBD1C2C452300F6A276 /* NetworkTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 0446CCBC1C2C452300F6A276 /* NetworkTools.m */; };
+		04ECDF441C2FB803009C2CB9 /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ECDF431C2FB803009C2CB9 /* News.m */; };
+		04ECDF481C2FDD52009C2CB9 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ECDF471C2FDD52009C2CB9 /* NSArray+Log.m */; };
+		04ECDF4B1C302F28009C2CB9 /* NewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ECDF4A1C302F28009C2CB9 /* NewsCell.m */; };
 		50C471B6139876EBD616C0DE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B983205E76C07B97E332B9A0 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -24,9 +25,6 @@
 		0446CC9D1C2C405200F6A276 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0446CC9F1C2C405200F6A276 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0446CCA01C2C405200F6A276 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0446CCA21C2C405200F6A276 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0446CCA31C2C405200F6A276 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		0446CCA61C2C405200F6A276 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0446CCA81C2C405200F6A276 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0446CCAB1C2C405200F6A276 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0446CCAD1C2C405200F6A276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,6 +33,12 @@
 		0446CCB91C2C41C800F6A276 /* NewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewController.m; sourceTree = "<group>"; };
 		0446CCBB1C2C452300F6A276 /* NetworkTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkTools.h; sourceTree = "<group>"; };
 		0446CCBC1C2C452300F6A276 /* NetworkTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkTools.m; sourceTree = "<group>"; };
+		04ECDF421C2FB803009C2CB9 /* News.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = News.h; sourceTree = "<group>"; };
+		04ECDF431C2FB803009C2CB9 /* News.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = News.m; sourceTree = "<group>"; };
+		04ECDF461C2FDD52009C2CB9 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
+		04ECDF471C2FDD52009C2CB9 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
+		04ECDF491C302F28009C2CB9 /* NewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsCell.h; sourceTree = "<group>"; };
+		04ECDF4A1C302F28009C2CB9 /* NewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsCell.m; sourceTree = "<group>"; };
 		2F776F6CB282878229D07C89 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		43ECC5EDA2DA31F7BA85C679 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B983205E76C07B97E332B9A0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,9 +80,6 @@
 				0446CCB31C2C415800F6A276 /* Class */,
 				0446CC9F1C2C405200F6A276 /* AppDelegate.h */,
 				0446CCA01C2C405200F6A276 /* AppDelegate.m */,
-				0446CCA21C2C405200F6A276 /* ViewController.h */,
-				0446CCA31C2C405200F6A276 /* ViewController.m */,
-				0446CCA51C2C405200F6A276 /* Main.storyboard */,
 				0446CCA81C2C405200F6A276 /* Assets.xcassets */,
 				0446CCAA1C2C405200F6A276 /* LaunchScreen.storyboard */,
 				0446CCAD1C2C405200F6A276 /* Info.plist */,
@@ -98,6 +99,7 @@
 		0446CCB31C2C415800F6A276 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				04ECDF451C2FDD52009C2CB9 /* Log */,
 				0446CCB41C2C418B00F6A276 /* News */,
 				0446CCB51C2C418B00F6A276 /* Tools */,
 			);
@@ -110,6 +112,10 @@
 				0446CCB61C2C41A400F6A276 /* News.storyboard */,
 				0446CCB81C2C41C800F6A276 /* NewsTableViewController.h */,
 				0446CCB91C2C41C800F6A276 /* NewsTableViewController.m */,
+				04ECDF421C2FB803009C2CB9 /* News.h */,
+				04ECDF431C2FB803009C2CB9 /* News.m */,
+				04ECDF491C302F28009C2CB9 /* NewsCell.h */,
+				04ECDF4A1C302F28009C2CB9 /* NewsCell.m */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -121,6 +127,15 @@
 				0446CCBC1C2C452300F6A276 /* NetworkTools.m */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		04ECDF451C2FDD52009C2CB9 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				04ECDF461C2FDD52009C2CB9 /* NSArray+Log.h */,
+				04ECDF471C2FDD52009C2CB9 /* NSArray+Log.m */,
+			);
+			path = Log;
 			sourceTree = "<group>";
 		};
 		A7AA6865863796093CB2BFFD /* Frameworks */ = {
@@ -201,7 +216,6 @@
 			files = (
 				0446CCAC1C2C405200F6A276 /* LaunchScreen.storyboard in Resources */,
 				0446CCA91C2C405200F6A276 /* Assets.xcassets in Resources */,
-				0446CCA71C2C405200F6A276 /* Main.storyboard in Resources */,
 				0446CCB71C2C41A400F6A276 /* News.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,7 +261,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0446CCBA1C2C41C800F6A276 /* NewsTableViewController.m in Sources */,
-				0446CCA41C2C405200F6A276 /* ViewController.m in Sources */,
+				04ECDF481C2FDD52009C2CB9 /* NSArray+Log.m in Sources */,
+				04ECDF4B1C302F28009C2CB9 /* NewsCell.m in Sources */,
+				04ECDF441C2FB803009C2CB9 /* News.m in Sources */,
 				0446CCBD1C2C452300F6A276 /* NetworkTools.m in Sources */,
 				0446CCA11C2C405200F6A276 /* AppDelegate.m in Sources */,
 				0446CC9E1C2C405200F6A276 /* main.m in Sources */,
@@ -257,14 +273,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0446CCA51C2C405200F6A276 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0446CCA61C2C405200F6A276 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0446CCAA1C2C405200F6A276 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
